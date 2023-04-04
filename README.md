@@ -1,5 +1,5 @@
 # Junior DevOps test job
-The developers gave you a web application written in `node.js`. The source code is located in this repository, in the `app` folder. The application listens on port `8000` and responds to HTTP requests with `Hello, world!`
+The developers gave you a web application written in `node.js`. The source code is located in this repository, in the `app` folder. The application listens on port `3000` and responds to HTTP requests with `Hello, World`
 
 You need to package this application into a docker image and create a configuration to deploy it to a server using `docker-compose`. The application on the site must be located in the virtual directory `/foo`, to access it, addresses like `http(s)://domain_name/foo` will be used.
 Use specialized docker images for application packaging and deployment.
