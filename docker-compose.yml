@@ -1,0 +1,29 @@
+version: '2'
+services:
+  juniorserver1:
+    container_name: juniorserver1
+    restart: always
+    build: .
+
+  juniorserver2:
+    container_name: juniorserver2
+    restart: always
+    build: .
+
+
+  juniornginx:
+    image: nginx:bullseye
+    container_name: juniornginx
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./conf.d/:/etc/nginx/conf.d/
+      - ./certificates:/certificates
+    depends_on:
+      - juniorserver1
+      - juniorserver2
+
+
+
