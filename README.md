@@ -1,4 +1,7 @@
 # Junior DevOps test job
+
+For testing run curl -kL http://localhost/foo. Also in server.js file 3 line was changed: from 127.0.0.1 to 0.0.0.0
+
 The developers gave you a web application written in `node.js`. The source code is located in this repository, in the `app` folder. The application listens on port `3000` and responds to HTTP requests with `Hello, World`
 
 You need to package this application into a docker image and create a configuration to deploy it to a server using `docker-compose`. The application on the site must be located in the virtual directory `/foo`, to access it, addresses like `http(s)://domain_name/foo` will be used.
@@ -21,3 +24,4 @@ Optional conditions, but we expect you to complete them.
  - Make access to the application only via `https` protocol, when accessing via `http`, a redirect to `https` should occur. For the site, use self-signed certificates, put them in the repository along with other files.
 
  - Launch two containers with the application on different ports and set up balancing of incoming requests to the site to these application instances.
+
