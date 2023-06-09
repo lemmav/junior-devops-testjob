@@ -1,6 +1,6 @@
 # Junior DevOps test job
 
-For testing run `curl -kL http://localhost/foo`. Also in server.js file 3 line was changed: from `127.0.0.1` to `0.0.0.0`
+For testing run `curl -kL http://localhost/foo`. Also in `server.js` file 3 line was changed: from `127.0.0.1` to `0.0.0.0`
 
 The developers gave you a web application written in `node.js`. The source code is located in this repository, in the `app` folder. The application listens on port `3000` and responds to HTTP requests with `Hello, World`
 
